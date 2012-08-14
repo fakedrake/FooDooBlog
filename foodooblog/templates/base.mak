@@ -10,20 +10,23 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/blitzer/jquery-ui.css" type="text/css" />
+    <link rel="stylesheet" href="${request.static_url('foodooblog:static/style.css')}" type="text/css"/>
   </head>
-  <body>
-    <div class="header">
+  <body class="">
+    <div class="wrapper">
       <%include file="header.mak"/>
-    </div>
+      <div class="body">
+	<div class="body">
+	  ${self.body()}
+	</div>
 
-    <div class="body">
-     ${self.body()}
+      </div>
+      <div class="footer">
+	<%block name="footer">
+	Chris "fakedrake" Perivolaropoulos made this shit from scratch (using Pyramid).
+      </%block>
     </div>
+  </div>
 
-    <div class="footer">
-      <%block name="footer">
-      this is the footer
-</%block>
-</div>
 </body>
 </html>

@@ -34,9 +34,8 @@ def view_post(request):
 
 
 @view_config(route_name='edit_post', renderer='edit.mak')
-def add_post(request):
-    """Show edit form if no form is submitted, if a form Is submitted,
-    add the post and redirect to view it!"""
+def edit_post(request):
+    """Edit view for the post."""
     if 'form.submitted' in request.params:
         # delete old post
         title = request.params['title']
