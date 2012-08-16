@@ -9,4 +9,5 @@
   <div class="post-body">
     ${post.body}
   </div>
+  <div class="post-properties">Views: ${post.view_count}</div>
 </div>

@@ -14,7 +14,9 @@ requires = [
     'pyramid_debugtoolbar',
     'zope.sqlalchemy',
     'waitress',
-    'docutils',
+    'nose',
+    'pyramid_beaker',
+    'deform',
     ]
 
 setup(name='FooDooBlog',

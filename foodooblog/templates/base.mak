@@ -9,8 +9,10 @@
     <title><%block name="title"/> - FooDooBlog</title>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+    <script src="${request.static_url('deform:static/scripts/deform.js')}"></script>
     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/blitzer/jquery-ui.css" type="text/css" />
     <link rel="stylesheet" href="${request.static_url('foodooblog:static/style.css')}" type="text/css"/>
+    <link rel="stylesheet" href="${request.static_url('deform:static/css/form.css')}" type="text/css"/>
   </head>
   <body class="">
     <div class="wrapper">

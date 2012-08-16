@@ -43,7 +43,7 @@ $(".post-list-item").hover(
 	add_handlers();
     },
     function () {
-	$(this).find(".post-control").remove();
+	$(this).find(".post-control").fadeOut();
     }
 );
 

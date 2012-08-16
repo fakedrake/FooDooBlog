@@ -25,6 +25,7 @@ class Post(Base):
     name = Column(Text, unique=True)
     title = Column(Text)
     body = Column(Integer)
+    view_count = Column(Integer)
 
     def __init__(self, title, body='', name=None):
         if name is None:
@@ -33,3 +34,4 @@ class Post(Base):
         self.name = name
         self.title = title
         self.body = body
+        self.view_count = 0

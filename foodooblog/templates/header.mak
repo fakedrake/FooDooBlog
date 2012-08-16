@@ -4,4 +4,7 @@
     <!-- 	 src="${request.static_url('foodooblog:static/pyramid-small.png')}" /> -->
     FooDoo
   </a>
+  <div class="searchbar header-menu">
+    ${search_bar|n}
+  </div>
 </div>
